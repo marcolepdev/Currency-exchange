@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Currency Converter</title>
 
-  <link rel="stylesheet" href="style.css">
+  <!--axios CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
@@ -17,29 +21,34 @@
     <div class= "campo currency-from">
       <label name="from">From</label>
       <div>  
-        <select>
-          <option>EUR</option>
-          <option>POUND</option>
+        <select id="from-currency">
+          <option selected>EUR</option>
+          <option>PND</option>
           <option>USD</option>
           <option>MXD</option>
           <option>ARS</option>      
         </select>
-        <input type="number">
+        <input id="from-value" class="display-values" type="number" placeholder="0,00">
       </div>  
       </div>
+
+<button id="button">CONVERT</button>
+
     <div class="campo currency-to">
       <label name="from">To</label>
-      <div>  
-        <select>
+        <div class="display-container">
+        <select id="to-currency">
           <option>EUR</option>
-          <option>POUND</option>
+          <option selected>PND</option>
           <option>USD</option>
           <option>MXD</option>
           <option>ARS</option>      
         </select>
-        <input type="number">
+        <input id="to-value" class="display-values" type="number"  placeholder="0,00">
       </div>
     </div>
 
+    
+    <script src="index.js"></script>
 </body>
 </html>
