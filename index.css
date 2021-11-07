@@ -2,57 +2,72 @@
 
 body{
   font-family: Lato;
+  background-color: #f4f0ec;
 }
 
 * {
   margin:0;
   padding:0;
-
+box-sizing: border-box;
 }
 
 
 
 #app {
-  top:20px;
+  top:150px;
   position:relative;
   margin:0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:325px;
+  border-radius: 15px;
+  background-color: #f4f0ec;
+  border:1px solid #dbd7d2;
 
 }
 
 #header {
   text-align:center;
+  background: linear-gradient(to top, #0247cc, #0686cd ); 
+  padding:0px 30px 5px 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color:#FFFFFF;
+}
+
+h1 {
+  font-size: 1.959rem;
 }
 
 .campo{
   max-width: 600px;
-  color:#FFFFFF;
+  color:#000000;
   display: flex;
   padding: 30px;
   margin: 30px 10px;
   justify-content: center;
-  background-color: #36096d;
-  background-image: linear-gradient(315deg, #36096d 0%, #2b0f4d 74%);
+  border-radius: 10px;
   
-}
-
-label {
-  width: 50px;
-  display: block;
-  padding:10px 10px 10px 0;
-  margin-right: 25px;
 }
 
 select, input[type=number], .display-values {
   padding:5px;
   outline: none;
-  background-color: #ab7ee244;
-  border: none;
-  color:#FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border:1px solid #dcdcdc;
+  color:#000000;
 }
 
+option {
+  background-color: #FFFFFF;
+  color:#000000;
+}
+
+span {
+  display: inline;
+}
 
 
 .currency{
@@ -60,13 +75,25 @@ select, input[type=number], .display-values {
   padding: 10px 10px 10px 0;  
 }
 
-#button {
-  padding:15px 15px 15px 15px;
-  background-color: orange;
+.btn {
+  padding:10px 10px 10px 10px;
+  background: linear-gradient(to top, #0247cc, #0686cd );
   border:none;
   border-radius: 5%;
   font-family: Lato;
   font-weight: bold;
+  margin-left:20px;
+  color:white;
+}
+
+
+input:focus {
+  background-color: #9c95a744;
+  color:#000000;
+}
+
+::-webkit-input-placeholder{
+  color:#000000;
 }
 
 

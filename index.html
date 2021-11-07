@@ -10,8 +10,6 @@
   <!--axios CDN-->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
   <div id="app">
@@ -19,34 +17,34 @@
       <h1>Currency exchange</h1>
     </div>
     <div class= "campo currency-from">
-      <label name="from">From</label>
       <div>  
         <select id="from-currency">
-          <option selected>EUR</option>
-          <option>PND</option>
+          <option>EUR</option>
+          <option>GBP</option>
           <option>USD</option>
-          <option>MXD</option>
+          <option>MXN</option>
           <option>ARS</option>      
         </select>
         <input id="from-value" class="display-values" type="number" placeholder="0,00">
       </div>  
       </div>
-
-<button id="button">CONVERT</button>
+<div class="button-container">
+  <button class="btn" id="button-invert">INVERT</button><span><button class="btn" id="button-convert">CONVERT</button> </span>
+</div>
 
     <div class="campo currency-to">
-      <label name="from">To</label>
         <div class="display-container">
         <select id="to-currency">
           <option>EUR</option>
-          <option selected>PND</option>
+          <option>GBP</option>
           <option>USD</option>
-          <option>MXD</option>
+          <option>MXN</option>
           <option>ARS</option>      
         </select>
-        <input id="to-value" class="display-values" type="number"  placeholder="0,00">
+          <input class="display-values" type="number" id="to-value" placeholder="0,00">
       </div>
-    </div>
+      </div>
+  </div>
 
     
     <script src="index.js"></script>
