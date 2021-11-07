@@ -24,9 +24,6 @@ buttonConvert.addEventListener("click", () => {
 buttonInvert.addEventListener("click", () => {
   let tempCurrency = fromCurrency.value;
   let tempValue = fromValue.value;
-
-  console.log(tempCurrency)
-  console.log(tempValue)
   
   fromCurrency.value = toCurrency.value;
   fromValue.value = toValue;
